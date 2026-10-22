@@ -16,6 +16,7 @@ body {
         ".... head ...."
         ".... main ...."
         ".... foot ...."
+        ".... city ...."
         ".... .... ....";
     gap: 1em 0;
 }
@@ -42,7 +43,8 @@ main {
         "schabowy"
         "bigos"
         "zurek"
-        "golabki";     
+        "golabki"     
+        "city";     
 }
 
 @media(min-width: 500px) {
@@ -53,6 +55,7 @@ main {
             "schabowy schabowy"
             "zurek bigos"
             "golabki golabki"
+            "city city"
     } 
 }
    
@@ -62,7 +65,7 @@ main {
         grid-template-columns: repeat(9, 1fr) repeat(3, minmax(70px, 1fr));
         grid-template-areas: 
             "pierogi pierogi pierogi pierogi pierogi pierogi schabowy schabowy schabowy bigos bigos bigos"
-            "zurek zurek zurek golabki golabki golabki golabki golabki golabki . . ."
+            "zurek zurek zurek golabki golabki golabki golabki golabki golabki city city city"
     }
 }
 
@@ -84,6 +87,10 @@ main {
 
 .golabki {
     grid-area: golabki;
+}
+
+.city {
+    grid-area: city;
 }
 
 /* =================
