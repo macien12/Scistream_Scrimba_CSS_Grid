@@ -7,21 +7,6 @@ html, body {
 /* =================
     Site Layout 
    ================= */
-/* 
-Challenge:
-    1. Get the header, main, and footer 
-       into a vertical column. 
-    2. Put an em of space between them 
-       vertically.
-    3. Put an em of space above the header, 
-       below the footer, and to the left and 
-       right of all three elements.  
-    🤔 Have you learned any good techniques 
-       for creating empty rows/columns in a grid?
-    ⚠️ You do NOT need to use the 'margin' 
-       property to complete this challenge.
-    🛟 hint.md for help!
- */
 
 body {
     display: grid;
@@ -53,21 +38,21 @@ main {
     gap: 1em;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "tech"
-        "envi"
-        "nasa"
-        "phys"
-        "heal";     
+        "pierogi"
+        "schabowy"
+        "bigos"
+        "zurek"
+        "golabki";     
 }
 
 @media(min-width: 500px) {
     main {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "tech tech"
-            "envi nasa"
-            "phys nasa"
-            "heal heal"
+            "pierogi pierogi"
+            "schabowy nasa"
+            "zurek bigos"
+            "golabki golabki"
     } 
 }
    
@@ -76,29 +61,29 @@ main {
         grid-template-columns: repeat(12, 1fr);
         grid-template-columns: repeat(9, 1fr) repeat(3, minmax(70px, 1fr));
         grid-template-areas: 
-            "tech tech tech tech tech tech envi envi envi nasa nasa nasa"
-            "phys phys phys heal heal heal heal heal heal nasa nasa nasa"
+            "pierogi pierogi pierogi pierogi pierogi pierogi schabowy schabowy schabowy bigos bigos bigos"
+            "zurek zurek zurek golabki golabki golabki golabki golabki golabki bigos bigos bigos"
     }
 }
 
-.technology {
-    grid-area: tech;
+.pierogi {
+    grid-area: pierogi;
 }
     
-.environment {
-    grid-area: envi;
+.schabowy {
+    grid-area: schabowy;
 }
 
-.nasa {
-    grid-area: nasa;
+.bigos {
+    grid-area: bigos;
 }
 
-.physics { 
-    grid-area: phys;
+.zurek { 
+    grid-area: zurek;
 }
 
-.health {
-    grid-area: heal;
+.golabki {
+    grid-area: golabki;
 }
 
 /* =================
